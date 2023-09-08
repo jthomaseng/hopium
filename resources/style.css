@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 5px;
+    padding: 0px;
+}
+
+html {
+    background-color: rgb(30,30,30);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+header {
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    background-color: black;
+}
+
+#header-content {
+    display: inline-flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+#site-logo {
+    max-height: 40px;
+    height: 100%;
+    border-radius: 10px;
+    float: left;
+}
+
+#right-header {
+    display: inline-flex;
+    align-items: center;
+}
+
+#menu-icon {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+#header-search {
+    width: 350px;
+    padding: 10px;
+
+}
+#searchbar {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+
+}
+
+#account-nav {
+    display: inline-flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
