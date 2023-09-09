@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <div id="header-content">
+            <div id="header-content" class="center">
                 <div id="left-header" class="center">
                     <img src="./images/logo-small.png" id="site-logo"/>
                     <div id="menu-icon" class="sideMargin center">
@@ -18,10 +18,12 @@
                 </div>
                 <div id="searchbar" class="sideMargin center">
                     <!-- ADD SEARCH BAR FORM FIELD HERE-->
-                    <form id="search-form">Search</form>
-                    <span class="material-symbols-outlined">search</span>
+                    <form id="search-form" class="center">
+                        <input type="text" name="searchterm" placeholder="Search...">
+                        <input type="submit" value="search" class="material-symbols-outlined">
+                    </form>
                 </div>
-                <div id="account-nav">
+                <div id="account-nav" class="center">
                     <!--Convert to ul and adjust horizontal margins-->
                     <span class="material-symbols-outlined">bookmark_add</span>
                     <h3>Watchlist</h3>
@@ -36,6 +38,21 @@
 
             <div>
                 <img src="" id="gameCover"/>
+            </div>
+            <div id="linkWidget" class="center">
+                <ul class="center">
+                    <li><a href="https://store.steampowered.com/app/1716740/Starfield/">
+                        <img src="./images/icons/steam-48.png"/></a></li>
+                    <li><a href="https://www.ign.com/games/starfield">
+                        <img src="./images/icons/IGN.png"/></a></li>
+                    <li><a href="https://starfield.fandom.com/wiki/Starfield">
+                        <img src="./images/icons/fandom.jpg" /></a></li>
+                    <li><a href="https://www.metacritic.com/game/pc/starfield">
+                        <img src="./images/icons/metacritic.png" /></a></li>
+                    <li><a href="https://bethesda.net/en/game/starfield">
+                        <img src="./images/icons/bethesda.png" /></a></li>
+
+                </ul>
             </div>
 
         </main>

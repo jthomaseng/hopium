@@ -34,6 +34,8 @@ header {
 .center {
     display: inline-flex;
     align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 #header-content {
@@ -50,22 +52,28 @@ header {
     float: left;
 }
 
-#search-form {
-    width: 100%;
-    padding: 10px;
-
-}
 
 #searchbar {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
+    height: 2rem;
     width: 100%;
 }
 
-#account-nav {
-    display: inline-flex;
-    align-items: center;
+#searchbar,input[type=text] {
+    width: 280px;
+    height: 2rem;
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+    background-color: whitesmoke;
+}
+
+#searchbar,input[type=submit] {
+    margin-left: 0;
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    position: relative;
+    right: 1rem;
 }
 
 .material-symbols-outlined {
@@ -90,6 +98,34 @@ main {
 
 
 #gameCover {
-    width: auto;
-    height: 300px;
+    width: 210px;
+    height: auto;
+}
+
+#linkWidget {
+    background-color: rgb(80,80,80);
+    border-radius: 0.5rem;
+    width: 210px;
+    height: 4rem;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#linkWidget ul {
+    margin: 0;
+}
+#linkWidget li {
+    display: inline-flex;
+    margin: 2px;
+    padding: 0;
+    width: 2.2rem;
+    height: 2rem;
+}
+
+#linkWidget li a img{
+    margin: 0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.5rem;
 }
