@@ -13,7 +13,7 @@ html {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 header {
@@ -22,6 +22,18 @@ header {
     align-self: center;
     width: 100%;
     background-color: black;
+    margin: 0;
+}
+
+.sideMargin {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-wrap: nowrap;
+}
+
+.center {
+    display: inline-flex;
+    align-items: center;
 }
 
 #header-content {
@@ -38,29 +50,17 @@ header {
     float: left;
 }
 
-#right-header {
-    display: inline-flex;
-    align-items: center;
-}
-
-#menu-icon {
-    display: inline-flex;
-    align-items: center;
-
-}
-
-#header-search {
-    width: 350px;
+#search-form {
+    width: 100%;
     padding: 10px;
 
 }
+
 #searchbar {
-    display: inline-flex;
-    align-items: center;
     background-color: white;
     color: black;
     border-radius: 5px;
-
+    width: 100%;
 }
 
 #account-nav {
@@ -79,4 +79,17 @@ header {
 main {
     max-width: 1000px;
     margin: auto;
+    padding: 10px;
+    background-color: rgb(20,20,20);
+}
+
+#developer {
+    margin-left: 10px;
+    font-style: italic;
+}
+
+
+#gameCover {
+    width: auto;
+    height: 300px;
 }
