@@ -34,27 +34,168 @@
         </header>
         <main>
             <h1 id="game-title">Generic Game Title</h1>
-            <p id="developer">Generic Development Studio<p>
+            <section id="gameSummarySection">
+                <div id="gameSummary">
+                    <div id="coverAndLinkWidget">
+                        <div>
+                            <img src="" id="gameCover"/>
+                        </div>
+                        <div id="releaseDetails">
+                            <p id="released">Released: September 5, 2023</p>
+                            <p id="developer">Generic Development Studio</p>
+                            <p id="publisher">Generic Development Studio</p>
+                        </div>
+                        <div id="linkWidget" class="center">
+                            <ul class="center">
+                                <li><a href="https://store.steampowered.com/app/1716740/Starfield/">
+                                    <img src="./images/icons/steam-48.png"/></a></li>
+                                <li><a href="https://www.ign.com/games/starfield">
+                                    <img src="./images/icons/IGN.png"/></a></li>
+                                <li><a href="https://starfield.fandom.com/wiki/Starfield">
+                                    <img src="./images/icons/fandom.jpg" /></a></li>
+                                <li><a href="https://www.metacritic.com/game/pc/starfield">
+                                    <img src="./images/icons/metacritic.png" /></a></li>
+                                <li><a href="https://bethesda.net/en/game/starfield">
+                                    <img src="./images/icons/bethesda.png" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="compositeReviewSummary" class="sideMargin review">
+                        <h2>Composite: <span class="rating">8</span>/10</h2>
+                        <p>Casual (3,052): (i) <span class="rating">8</span>/10</p>
+                        <p>Dedicated (439): (i) <span class="rating">7</span>/10</p>
+                        <p>Competitive (127): (i) <span class="rating">3</span>/10</p>
+                        <button class="reviewButton">Leave a Review</button>
+                        <button class="altButton">See Full Review Details</button>
+                        <div id="latestPatch" class="patch">
+                            <h2>Latest Patch <span class="patchRating material-symbols-outlined">
+                                8</span></h2>
+                            <p>Patch 1.2.4 released September 9, 2023</p>
+                            <button class="reviewButton">Leave a Patch Review</button>
+                            <button class="altButton">See Full Patch History</button>
+                        </div>
+                    </div>
+                    <div class="ad250Square sideMargin">
+                        <p>Ad Space 250x250</p>
+                    </div>
+                </div>
+                <div id="compositeProAndCon" class="review sideMargin center">
+                    <div id="currentPros" class="proBlock">
+                        <h2>Pleasures</h2>
+                        <ul class="proList">
+                            <li>Fantastic Class Balance</li>
+                            <li>Incredible World-building</li>
+                            <li>Engaging Campaign</li>
+                            <li>Pro 4</li>
+                            <li>Pro 5</li>
+                            <li>Pro 6</li>
+                            <li>Pro 7</li>
+                            <li>Pro 8</li>
+                            <li>Pro 9</li>
+                            <li>Pro 10</li>
+                        </ul>
+                    </div>
+                    <div id="currentCons" class="conBlock">
+                        <h2>Griefs</h2>
+                        <ul class="conList">
+                            <li>Repetitive Dungeons</li>
+                            <li>Simple Boss Fights</li>
+                            <li>Poor Attack Signaling</li>
+                            <li>Con 4</li>
+                            <li>Con 5</li>
+                            <li>Con 6</li>
+                            <li>Con 7</li>
+                            <li>Con 8</li>
+                        </ul>
+                    </div>
+                    <div id="resolvedCons" class="resolvedBlock">
+                        <h2>Resolved Griefs</h2>
+                        <ul class="resolvedList">
+                            <li>Multiplayer Bugs (patch 1.1.0)</li>
+                            <li>Cannot pet the dog (patch 1.0.4)</li>
+                            <li>Not enough bag space (patch 1.0.3)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="fullReviewSection">
+            <div id="fullReviewBreakdown" class="review">
 
-            <div>
-                <img src="" id="gameCover"/>
+                <div id="detailedCompositeReview">
+                    <h2>Detailed Composite Review Breakdown</h2>
+                    <div id= "playerTypeSelectCompositeReview" class="playerTypeSelection">
+                        <ul class="playerTypeList">
+                            <li id="compositeButton">Composite</li>
+                            <li id="casualButton">Casual</li>
+                            <li id="dedicatedButton">Dedicated</li>
+                            <li id="competitiveButton">Competitve</li>
+                        </ul>
+                    </div>
+                    <ul class="featureRatingList">
+                        <li>Campaign (slider-element)</li>
+                        <li>Class Balance (slider-element)</li>
+                        <li>World-Building (slider-element)</li>
+                        <li>Art (slider-element)</li>
+                        <li>Boss Encounters (slider-element)</li>
+                        <li>Itemization (slider-element)</li>
+                        <li>Multiplayer (slider-element)</li>
+                    </ul>
+                </div>
             </div>
-            <div id="linkWidget" class="center">
-                <ul class="center">
-                    <li><a href="https://store.steampowered.com/app/1716740/Starfield/">
-                        <img src="./images/icons/steam-48.png"/></a></li>
-                    <li><a href="https://www.ign.com/games/starfield">
-                        <img src="./images/icons/IGN.png"/></a></li>
-                    <li><a href="https://starfield.fandom.com/wiki/Starfield">
-                        <img src="./images/icons/fandom.jpg" /></a></li>
-                    <li><a href="https://www.metacritic.com/game/pc/starfield">
-                        <img src="./images/icons/metacritic.png" /></a></li>
-                    <li><a href="https://bethesda.net/en/game/starfield">
-                        <img src="./images/icons/bethesda.png" /></a></li>
-
-                </ul>
+            </section>
+            <section id="LatestReviewSection">
+            <div id="latestReviewList" class="review">
+                <h2>Latest Reviews</h2>
+                <div id="playerTypeFullReviewList" class="playerTypeSelection">
+                    <ul class="playerTypeList">
+                        <li id="compositeButton">Composite</li>
+                        <li id="casualButton">Casual</li>
+                        <li id="dedicatedButton">Dedicated</li>
+                        <li id="competitiveButton">Competitve</li>
+                    </ul>
+                </div>
+                <div class="reviewElement">
+                    <h3>Review Summary Assigned by Reviewer</h3>
+                    <p>Reviewer Name (link to profile/review list)</p>
+                    <p>Reviewer Type (Casual, Dedicated, Competitive)</p>
+                    <ul class="featureRatingList">
+                        <li>Campaign (slider-element)</li>
+                        <li>Class Balance (slider-element)</li>
+                        <li>World-Building (slider-element)</li>
+                        <li>Art (slider-element)</li>
+                        <li>Boss Encounters (slider-element)</li>
+                        <li>Itemization (slider-element)</li>
+                        <li>Multiplayer (slider-element)</li>
+                    </ul>
+                    <h4>Summary of Impressions</h4>
+                    <p>This was a fantastic game despite many flaws. Forthwitch I shall
+                        explain these to you in detail, while letting the summary pro
+                        and con list offer you a quick glimpse into my overall opinion.
+                    </p>
+                    <p>Read full review...</p>
+                    <div id="reviewerPros">
+                        <h2>Pleasures</h2>
+                        <ul class="proList">
+                            <li>Fantastic Class Balance</li>
+                            <li>Incredible World-building</li>
+                            <li>Engaging Campaign</li>
+                            <li>Pro 4</li>
+                            <li>Pro 5</li>
+                        </ul>
+                    </div>
+                    <div id="reviewerCons">
+                        <h2>Griefs</h2>
+                        <ul class="conList">
+                            <li>Repetitive Dungeons</li>
+                            <li>Simple Boss Fights</li>
+                            <li>Poor Attack Signaling</li>
+                            <li>Con 4</li>
+                            <li>Con 5</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
+            </section>
         </main>
     </body>
 </html>
