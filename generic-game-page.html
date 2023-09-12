@@ -40,11 +40,6 @@
                         <div>
                             <img src="" id="gameCover"/>
                         </div>
-                        <div id="releaseDetails">
-                            <p id="released">Released: September 5, 2023</p>
-                            <p id="developer">Generic Development Studio</p>
-                            <p id="publisher">Generic Development Studio</p>
-                        </div>
                         <div id="linkWidget" class="center">
                             <ul class="center">
                                 <li><a href="https://store.steampowered.com/app/1716740/Starfield/">
@@ -59,29 +54,54 @@
                                     <img src="./images/icons/bethesda.png" /></a></li>
                             </ul>
                         </div>
+                        <div id="releaseDetails">
+                            <p id="released">Released: September 5, 2023</p>
+                            <p id="developer">Generic Development Studio</p>
+                            <p id="publisher">Generic Development Studio</p>
+                        </div>
+
                     </div>
                     <div id="compositeReviewSummary" class="sideMargin review">
-                        <h2>Composite: <span class="rating">8</span>/10</h2>
-                        <p>Casual (3,052): (i) <span class="rating">8</span>/10</p>
-                        <p>Dedicated (439): (i) <span class="rating">7</span>/10</p>
-                        <p>Competitive (127): (i) <span class="rating">3</span>/10</p>
-                        <button class="reviewButton">Leave a Review</button>
-                        <button class="altButton">See Full Review Details</button>
-                        <div id="latestPatch" class="patch">
-                            <h2>Latest Patch <span class="patchRating material-symbols-outlined">
-                                8</span></h2>
-                            <p>Patch 1.2.4 released September 9, 2023</p>
-                            <button class="reviewButton">Leave a Patch Review</button>
-                            <button class="altButton">See Full Patch History</button>
+                        <div id="gameReviewSummary" class="reviewSummary">
+                            <h2>Composite Rating: <span class="rating">7</span>/10</h2>
+                            <div id="playerTypeReviewSummary">
+                                <p>Casual <span class="numberOfReviews">(3,549)</span>:   <span class="rating">8</span>/10</p>
+                                <p>Dedicated <span class="numberOfReviews">(531)</span>:  <span class="rating">7</span>/10</p>
+                                <p>Competitive <span class="numberOfReviews">(178)</span>:  <span class="rating">3</span>/10</p>
+                            </div>
+                            <button class="reviewButton">Leave a Game Review</button>
+                            <button class="altButton">View Review Details</button>
+                        </div>
+                        <div id="seasonReviewSummary" class="reviewSummary">
+                            <h2>Latest Season: <span class="rating">7</span>/10</h2>
+                            <div id="playerTypeReviewSummary">
+                                <p>Casual <span class="numberOfReviews">(395)</span>:   <span class="rating">9</span>/10</p>
+                                <p>Dedicated <span class="numberOfReviews">(238)</span>:  <span class="rating">8</span>/10</p>
+                                <p>Competitive <span class="numberOfReviews">(39)</span>:  <span class="rating">5</span>/10</p>
+                            </div>
+                            <p class="seasonSummary"><b>Season 3</b> released September 30, 2023</p>
+                            <button class="reviewButton">Leave a Season Review</button>
+                            <button class="altButton">View Season History</button>
                         </div>
                     </div>
-                    <div class="ad250Square sideMargin">
-                        <p>Ad Space 250x250</p>
+                    <div id="patchReviewSummary" class="sideMargin review">
+                        <div id="latestPatch" class="patch reviewSummary">
+                            <h2>Latest Patch <span class="patchRating material-symbols-outlined">
+                                8</span></h2>
+                            <p id="patchSummary">Patch 1.2.4 released September 9, 2023 is
+                                viewed as an <span class="patchSentiment">Improvement</span></p>
+                            <button class="reviewButton">Leave a Patch Review</button>
+                            <button class="altButton">View Patch History</button>
+                        </div>
+                        <div class="ad250Square sideMargin">
+                            <p>Ad Space 250x250</p>
+                        </div>
                     </div>
+
                 </div>
                 <div id="compositeProAndCon" class="review sideMargin center">
-                    <div id="currentPros" class="proBlock">
-                        <h2>Pleasures</h2>
+                    <div id="currentPros" class="proConBlock proBlock">
+                        <h2>The Good</h2>
                         <ul class="proList">
                             <li>Fantastic Class Balance</li>
                             <li>Incredible World-building</li>
@@ -95,8 +115,8 @@
                             <li>Pro 10</li>
                         </ul>
                     </div>
-                    <div id="currentCons" class="conBlock">
-                        <h2>Griefs</h2>
+                    <div id="currentCons" class="proConBlock conBlock">
+                        <h2>The Bad</h2>
                         <ul class="conList">
                             <li>Repetitive Dungeons</li>
                             <li>Simple Boss Fights</li>
@@ -108,8 +128,8 @@
                             <li>Con 8</li>
                         </ul>
                     </div>
-                    <div id="resolvedCons" class="resolvedBlock">
-                        <h2>Resolved Griefs</h2>
+                    <div id="resolvedCons" class="proConBlock resolvedBlock">
+                        <h2>The Resolved</h2>
                         <ul class="resolvedList">
                             <li>Multiplayer Bugs (patch 1.1.0)</li>
                             <li>Cannot pet the dog (patch 1.0.4)</li>

@@ -17,7 +17,7 @@ h1 {
 }
 
 h2, h2 span {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 header {
@@ -102,9 +102,13 @@ main section {
     padding: 1rem;
 }
 
+#releaseDetails {
+    margin-top: 1rem;
+}
+
 #releaseDetails p {
     font-size: 0.9rem;
-    color: gray;
+    color: rgb(180, 180, 180);
     margin-left: 0.2rem;
     text-indent: -4.6rem;
     padding-left: 4.6rem;
@@ -112,12 +116,26 @@ main section {
 
 #gameSummary {
     display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #coverAndLinkWidget {
-    width: 220px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 440px;
     text-wrap: wrap;
+    background-color: rgb(30, 30, 30);
+    padding: 1rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
 }
+
 #gameCover {
     width: 200px;
     height: auto;
@@ -145,39 +163,102 @@ main section {
     border-radius: 0.5rem;
 }
 
+#compositeReviewSummary {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: 440px;
+    background-color: rgb(30, 30, 30);
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.reviewSummary {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.reviewSummary p {
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+    color: rgb(180, 180, 180);
+    text-wrap: wrap;
+}
+
+.reviewSummary p span {
+    font-size: 0.9rem;
+    color: rgb(180, 180, 180);
+}
+
+
+#patchReviewSummary {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 280px;
+    height: 440px;
+    background-color: rgb(30, 30, 30);
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.numberOfReviews {
+    color: rgb(100,100,100) !important;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.seasonSummary {
+    margin-top: 0.2rem;
+}
+
 .reviewButton {
     padding: 1rem;
     min-width: 250px;
     height: auto;
-    background-color: rgb(252, 250, 117);
+    background-color: rgb(57, 86, 141);
+    color: whitesmoke;
     border-radius: 1rem;
-    font-size: 1.5rem;
+    border:none;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.reviewButton:hover {
+    background-color: gray;
 }
 
 .altButton {
     padding: 0.2rem;
     min-width: 250px;
     height: auto;
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(100, 100, 100);
     border-radius: 1rem;
-    font-size: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
-#latestPatch {
-    margin-top: 1rem;
-    display: inline-flex;
-    flex-direction: column;
+.altButton:hover {
+    background-color: gray;
+    color: whitesmoke;
+    font-style: bold;
 }
-#compositeReviewSummary {
-    display: inline-flex;
-    flex-direction: column;
-    max-width: 300px;
+
+
+.patchSentiment {
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .ad250Square {
     background-color: rgb(165, 42, 102);
     width: 250px;
     height: 250px;
+    margin: 0.5rem;
 }
 
 .ad300Square {
@@ -189,49 +270,45 @@ main section {
 #compositeProAndCon {
     /* Convert to display grid */
     display: inline-flex;
-    padding: 1rem;
+    flex-wrap: wrap;
     width: 100%;
+    margin: auto;
+    margin-top: 1rem;
     justify-content: space-evenly;
-    text-wrap: wrap;
 }
 
+.proConBlock {
+    width: 280px;
+    min-height: 250px;
+    padding: 1rem;
+    text-wrap: wrap;
+    border-radius: 0.5rem;
+}
+
+.proConBlock ul {
+    list-style-position: inside;
+}
+
+.proConBlock ul li {
+    color: rgb(180, 180, 180);
+}
 
 .proBlock {
-    min-width: 300px;
-    min-height: 250px;
-    padding-left: 2rem;
-    border: solid 3px rgb(0, 255, 0);
-    background-color: rgb(1, 60, 1);
+    background-color: rgba(0, 255, 0, 0.2);
 }
 
 .conBlock {
-    min-width: 300px;
-    min-height: 250px;
-    padding-left: 2rem;
-    border: solid 3px red;
-    background-color: rgb(60, 1, 1);
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
 .resolvedBlock {
-    width: 280px;
-    min-height: 250px;
-    padding-left: 2rem;
-    border: solid 3px gray;
-    background-color: rgb(30, 30, 30);
-}
-
-.proList {
-}
-
-.conList {
-
+    background-color: rgba(128, 128, 128, 0.2);
 }
 
 
 .playerTypeList {
     display: inline-flex;
     list-style-type: none;
-
 }
 
 .playerTypeList li {
@@ -244,4 +321,11 @@ main section {
 #compositeButton {
     background-color: rgb(40,40,40);
     border: solid 1px whitesmoke;
+}
+
+.reviewElement {
+    background-color: rgb(30,30,30);
+    color: rgb(200,200,200);
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
