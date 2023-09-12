@@ -305,6 +305,28 @@ main section {
     background-color: rgba(128, 128, 128, 0.2);
 }
 
+.referenceTag {
+    color:rgb(120, 120, 120);
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.reviewTypeList {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.reviewTypeList li {
+    background-color: rgb(62, 74, 129);
+    padding: 1rem;
+    margin: 0.1rem;
+    border-radius: 1rem;
+}
+
+#mostRecentButton {
+    background-color: rgb(29, 35, 61);
+    border: solid 1px whitesmoke;
+}
 
 .playerTypeList {
     display: inline-flex;
@@ -328,4 +350,68 @@ main section {
     color: rgb(200,200,200);
     padding: 0.5rem;
     margin: 0.5rem;
+}
+
+.featureRatingList {
+    margin: 0.2rem;
+    padding: 1rem;
+    background-color: rgb(42, 42, 66);
+    min-width: 200px;
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+.featureRatingList ul {
+    list-style-type: none;
+}
+
+.featureRatingList li {
+    padding: 0.2rem;
+    font-family: monospace;
+}
+
+.ratingSlider {
+ /*Add slider customizations here or switch to powerrangers version*/
+ width: 12rem;
+}
+
+.reviewElement {
+    display: inline-flex;
+}
+
+.userInfoBlock {
+    display: inline-flex;
+    padding: 0.2rem;
+}
+.userProfileIcon {
+    height: 3rem;
+    border-radius: 20%;
+    margin-right: 0.5rem;
+}
+
+.userIDTag {
+    font-weight: bold;
+}
+
+.userReviewCount {
+    color: rgb(78, 93, 175);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.userReviewCount:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.userType {
+    color: gray;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.userJoinDate {
+    color: gray;
+    font-style: italic;
+    font-size: 0.9rem;
 }

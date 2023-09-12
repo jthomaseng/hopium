@@ -103,37 +103,27 @@
                     <div id="currentPros" class="proConBlock proBlock">
                         <h2>The Good</h2>
                         <ul class="proList">
-                            <li>Fantastic Class Balance</li>
-                            <li>Incredible World-building</li>
-                            <li>Engaging Campaign</li>
-                            <li>Pro 4</li>
-                            <li>Pro 5</li>
-                            <li>Pro 6</li>
-                            <li>Pro 7</li>
-                            <li>Pro 8</li>
-                            <li>Pro 9</li>
-                            <li>Pro 10</li>
+                            <li>Fantastic Class Balance <span class="referenceTag">(57%)</span></li>
+                            <li>Incredible World-building <span class="referenceTag">(52%)</span></li>
+                            <li>Engaging Campaign <span class="referenceTag">(51%)</span></li>
+                            <li>Imaginitive art style</li>
+                            <li>Easy to Learn</li>
                         </ul>
                     </div>
                     <div id="currentCons" class="proConBlock conBlock">
                         <h2>The Bad</h2>
                         <ul class="conList">
-                            <li>Repetitive Dungeons</li>
-                            <li>Simple Boss Fights</li>
-                            <li>Poor Attack Signaling</li>
-                            <li>Con 4</li>
-                            <li>Con 5</li>
-                            <li>Con 6</li>
-                            <li>Con 7</li>
-                            <li>Con 8</li>
+                            <li>Repetitive Dungeons <span class="referenceTag">(62%)</span></li>
+                            <li>Simple Boss Fights <span class="referenceTag">(34%)</span></li>
+                            <li>Poor Attack Signaling <span class="referenceTag">(30%)</span></li>
                         </ul>
                     </div>
                     <div id="resolvedCons" class="proConBlock resolvedBlock">
                         <h2>The Resolved</h2>
                         <ul class="resolvedList">
-                            <li>Multiplayer Bugs (patch 1.1.0)</li>
-                            <li>Cannot pet the dog (patch 1.0.4)</li>
-                            <li>Not enough bag space (patch 1.0.3)</li>
+                            <li>Multiplayer Bugs <span class="referenceTag">(Patch 1.1.0)</span></li>
+                            <li>Cannot pet the dog <span class="referenceTag">(Patch 1.0.4)</span></li>
+                            <li>Not enough bag space <span class="referenceTag">(Patch 1.0.3)</span></li>
                         </ul>
                     </div>
                 </div>
@@ -151,21 +141,51 @@
                             <li id="competitiveButton">Competitve</li>
                         </ul>
                     </div>
-                    <ul class="featureRatingList">
-                        <li>Campaign (slider-element)</li>
-                        <li>Class Balance (slider-element)</li>
-                        <li>World-Building (slider-element)</li>
-                        <li>Art (slider-element)</li>
-                        <li>Boss Encounters (slider-element)</li>
-                        <li>Itemization (slider-element)</li>
-                        <li>Multiplayer (slider-element)</li>
-                    </ul>
+                    <div class="featureRatingList">
+                        <h2>Feature Ratings</h2>
+                        <ul class="featureRatingList">
+                            <li>
+                                <label for="campaignSlider">Campaign: </label>
+                                <input id="campaignSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="classBalanceSlider">Class Balance: </label>
+                                <input id="classBalanceSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="worldBuildingSlider">World-Building: </label>
+                                <input id="worldBuildingSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="artStyleSlider">Art Style: </label>
+                                <input id="artStyleSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="bossEncounterSlider">Boss Encounters: </label>
+                                <input id="bossEncounterSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="itemizationSlider">Itemization: </label>
+                                <input id="itemizationSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="multiplayerSlider">Multiplayer: </label>
+                                <input id="MultiplayerSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             </section>
             <section id="LatestReviewSection">
             <div id="latestReviewList" class="review">
-                <h2>Latest Reviews</h2>
+                <h2>Game Review List</h2>
+                <div id="reviewTypeFullReviewList" class="reviewTypeSelection">
+                    <ul class="reviewTypeList">
+                        <li id="mostRecentButton">Most Recent</li>
+                        <li id="mostPopularButton">Most Popular</li>
+                    </ul>
+                </div>
                 <div id="playerTypeFullReviewList" class="playerTypeSelection">
                     <ul class="playerTypeList">
                         <li id="compositeButton">Composite</li>
@@ -175,43 +195,234 @@
                     </ul>
                 </div>
                 <div class="reviewElement">
-                    <h3>Review Summary Assigned by Reviewer</h3>
-                    <p>Reviewer Name (link to profile/review list)</p>
-                    <p>Reviewer Type (Casual, Dedicated, Competitive)</p>
-                    <ul class="featureRatingList">
-                        <li>Campaign (slider-element)</li>
-                        <li>Class Balance (slider-element)</li>
-                        <li>World-Building (slider-element)</li>
-                        <li>Art (slider-element)</li>
-                        <li>Boss Encounters (slider-element)</li>
-                        <li>Itemization (slider-element)</li>
-                        <li>Multiplayer (slider-element)</li>
-                    </ul>
-                    <h4>Summary of Impressions</h4>
-                    <p>This was a fantastic game despite many flaws. Forthwitch I shall
-                        explain these to you in detail, while letting the summary pro
-                        and con list offer you a quick glimpse into my overall opinion.
-                    </p>
-                    <p>Read full review...</p>
-                    <div id="reviewerPros">
-                        <h2>Pleasures</h2>
-                        <ul class="proList">
-                            <li>Fantastic Class Balance</li>
-                            <li>Incredible World-building</li>
-                            <li>Engaging Campaign</li>
-                            <li>Pro 4</li>
-                            <li>Pro 5</li>
-                        </ul>
+                    <div class="reviewColOne">
+                        <div class="userInfoBlock">
+                            <img class="userProfileIcon" src="./images/icons/bethesda.png"/>
+                            <div>
+                                <p class="userIDTag">2fit2quit <span class="userReviewCount">(12 Reviews)</span></p>
+                                <p class="userType">Casual</p>
+                                <p class="userJoinDate">Joined: September 2023</p>
+                            </div>
+                        </div>
+                        <div class="featureRatingList">
+                            <h2>Feature Ratings</h2>
+                            <ul class="featureRatingList">
+                                <li>
+                                    <label for="campaignSlider">Campaign: </label>
+                                    <input id="campaignSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="classBalanceSlider">Class Balance: </label>
+                                    <input id="classBalanceSlider" type="range" min="1" max="10" value="3" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="worldBuildingSlider">World-Building: </label>
+                                    <input id="worldBuildingSlider" type="range" min="1" max="10" value="9" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="artStyleSlider">Art Style: </label>
+                                    <input id="artStyleSlider" type="range" min="1" max="10" value="4" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="bossEncounterSlider">Boss Encounters: </label>
+                                    <input id="bossEncounterSlider" type="range" min="1" max="10" value="7" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="itemizationSlider">Itemization: </label>
+                                    <input id="itemizationSlider" type="range" min="1" max="10" value="5" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="multiplayerSlider">Multiplayer: </label>
+                                    <input id="MultiplayerSlider" type="range" min="1" max="10" value="6" class="ratingSlider" disabled="true">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="reviewerCons">
-                        <h2>Griefs</h2>
-                        <ul class="conList">
-                            <li>Repetitive Dungeons</li>
-                            <li>Simple Boss Fights</li>
-                            <li>Poor Attack Signaling</li>
-                            <li>Con 4</li>
-                            <li>Con 5</li>
-                        </ul>
+                    <div class="reviewColTwo">
+                        <div class="writtenReview">
+                            <h4>Summary of Impressions</h4>
+                            <p>This was a fantastic game despite many flaws. Forthwitch I shall
+                                explain these to you in detail, while letting the summary pro
+                                and con list offer you a quick glimpse into my overall opinion.
+                            </p>
+                            <p>Read full review...</p>
+                        </div>
+                        <div class="center">
+                            <div id="reviewerPros" class="proConBlock proBlock">
+                                <h2>The Good</h2>
+                                <ul class="proList">
+                                    <li>Fantastic Class Balance</li>
+                                    <li>Incredible World-building</li>
+                                    <li>Engaging Campaign</li>
+                                    <li>Pro 4</li>
+                                    <li>Pro 5</li>
+                                </ul>
+                            </div>
+                            <div id="reviewerCons" class="proConBlock conBlock">
+                                <h2>The Bad</h2>
+                                <ul class="conList">
+                                    <li>Repetitive Dungeons</li>
+                                    <li>Simple Boss Fights</li>
+                                    <li>Poor Attack Signaling</li>
+                                    <li>Con 4</li>
+                                    <li>Con 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewElement">
+                    <div class="reviewColOne">
+                        <div class="userInfoBlock">
+                            <img class="userProfileIcon" src="./images/icons/bethesda.png"/>
+                            <div>
+                                <p class="userIDTag">2fit2quit <span class="userReviewCount">(12 Reviews)</span></p>
+                                <p class="userType">Casual</p>
+                                <p class="userJoinDate">Joined: September 2023</p>
+                            </div>
+                        </div>
+                        <div class="featureRatingList">
+                            <h2>Feature Ratings</h2>
+                            <ul class="featureRatingList">
+                                <li>
+                                    <label for="campaignSlider">Campaign: </label>
+                                    <input id="campaignSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="classBalanceSlider">Class Balance: </label>
+                                    <input id="classBalanceSlider" type="range" min="1" max="10" value="3" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="worldBuildingSlider">World-Building: </label>
+                                    <input id="worldBuildingSlider" type="range" min="1" max="10" value="9" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="artStyleSlider">Art Style: </label>
+                                    <input id="artStyleSlider" type="range" min="1" max="10" value="4" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="bossEncounterSlider">Boss Encounters: </label>
+                                    <input id="bossEncounterSlider" type="range" min="1" max="10" value="7" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="itemizationSlider">Itemization: </label>
+                                    <input id="itemizationSlider" type="range" min="1" max="10" value="5" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="multiplayerSlider">Multiplayer: </label>
+                                    <input id="MultiplayerSlider" type="range" min="1" max="10" value="6" class="ratingSlider" disabled="true">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reviewColTwo">
+                        <div class="writtenReview">
+                            <h4>Summary of Impressions</h4>
+                            <p>This was a fantastic game despite many flaws. Forthwitch I shall
+                                explain these to you in detail, while letting the summary pro
+                                and con list offer you a quick glimpse into my overall opinion.
+                            </p>
+                            <p>Read full review...</p>
+                        </div>
+                        <div class="center">
+                            <div id="reviewerPros" class="proConBlock proBlock">
+                                <h2>The Good</h2>
+                                <ul class="proList">
+                                    <li>Fantastic Class Balance</li>
+                                    <li>Incredible World-building</li>
+                                    <li>Engaging Campaign</li>
+                                    <li>Pro 4</li>
+                                    <li>Pro 5</li>
+                                </ul>
+                            </div>
+                            <div id="reviewerCons" class="proConBlock conBlock">
+                                <h2>The Bad</h2>
+                                <ul class="conList">
+                                    <li>Repetitive Dungeons</li>
+                                    <li>Simple Boss Fights</li>
+                                    <li>Poor Attack Signaling</li>
+                                    <li>Con 4</li>
+                                    <li>Con 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewElement">
+                    <div class="reviewColOne">
+                        <div class="userInfoBlock">
+                            <img class="userProfileIcon" src="./images/icons/bethesda.png"/>
+                            <div>
+                                <p class="userIDTag">2fit2quit <span class="userReviewCount">(12 Reviews)</span></p>
+                                <p class="userType">Casual</p>
+                                <p class="userJoinDate">Joined: September 2023</p>
+                            </div>
+                        </div>
+                        <div class="featureRatingList">
+                            <h2>Feature Ratings</h2>
+                            <ul class="featureRatingList">
+                                <li>
+                                    <label for="campaignSlider">Campaign: </label>
+                                    <input id="campaignSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="classBalanceSlider">Class Balance: </label>
+                                    <input id="classBalanceSlider" type="range" min="1" max="10" value="3" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="worldBuildingSlider">World-Building: </label>
+                                    <input id="worldBuildingSlider" type="range" min="1" max="10" value="9" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="artStyleSlider">Art Style: </label>
+                                    <input id="artStyleSlider" type="range" min="1" max="10" value="4" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="bossEncounterSlider">Boss Encounters: </label>
+                                    <input id="bossEncounterSlider" type="range" min="1" max="10" value="7" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="itemizationSlider">Itemization: </label>
+                                    <input id="itemizationSlider" type="range" min="1" max="10" value="5" class="ratingSlider" disabled="true">
+                                </li>
+                                <li>
+                                    <label for="multiplayerSlider">Multiplayer: </label>
+                                    <input id="MultiplayerSlider" type="range" min="1" max="10" value="6" class="ratingSlider" disabled="true">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reviewColTwo">
+                        <div class="writtenReview">
+                            <h4>Summary of Impressions</h4>
+                            <p>This was a fantastic game despite many flaws. Forthwitch I shall
+                                explain these to you in detail, while letting the summary pro
+                                and con list offer you a quick glimpse into my overall opinion.
+                            </p>
+                            <p>Read full review...</p>
+                        </div>
+                        <div class="center">
+                            <div id="reviewerPros" class="proConBlock proBlock">
+                                <h2>The Good</h2>
+                                <ul class="proList">
+                                    <li>Fantastic Class Balance</li>
+                                    <li>Incredible World-building</li>
+                                    <li>Engaging Campaign</li>
+                                    <li>Pro 4</li>
+                                    <li>Pro 5</li>
+                                </ul>
+                            </div>
+                            <div id="reviewerCons" class="proConBlock conBlock">
+                                <h2>The Bad</h2>
+                                <ul class="conList">
+                                    <li>Repetitive Dungeons</li>
+                                    <li>Simple Boss Fights</li>
+                                    <li>Poor Attack Signaling</li>
+                                    <li>Con 4</li>
+                                    <li>Con 5</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
