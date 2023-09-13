@@ -18,7 +18,7 @@
                 </div>
                 <div id="searchbar" class="sideMargin center">
                     <!-- ADD SEARCH BAR FORM FIELD HERE-->
-                    <form id="search-form" class="center">
+                    <form id="search-form" class="center" action="search-results.html" method="GET">
                         <input type="text" name="searchterm" placeholder="Search...">
                         <input type="submit" value="search" class="material-symbols-outlined">
                     </form>
@@ -69,7 +69,7 @@
                                 <p>Dedicated <span class="numberOfReviews">(531)</span>:  <span class="rating">7</span>/10</p>
                                 <p>Competitive <span class="numberOfReviews">(178)</span>:  <span class="rating">3</span>/10</p>
                             </div>
-                            <button class="reviewButton">Leave a Game Review</button>
+                            <a href="#yourGameReview-Marker"><button id="leaveGameReviewButton" class="reviewButton">Leave a Game Review</button></a>
                             <a href="#detailedCompositeReview"><button class="altButton">View Review Details</button></a>
                         </div>
                         <div id="seasonReviewSummary" class="reviewSummary">
@@ -127,6 +127,55 @@
                         </ul>
                     </div>
                 </div>
+            </section>
+            <!--USER'S PERSONAL GAME REVIEW SECTION-->
+            <section id="yourGameReview"> <!--Add hidden="true"-->
+                <div id="yourGameReview-Marker" class="anchorMarker"></div>
+                <h2>Your Game Review</h2>
+                <form id="gameReviewForm">
+                    <div id="selectPlayerType">
+                        <p><b>Choose your player type:<span class="requiredTag"> *</span></b></p>
+                        <input type="radio" id="casual" name="playerType" class="sideMargin topBotMargin" required>
+                        <label for="casual">Casual <span class="referenceTag">(~10hrs/week)</span></label><br>
+                        <input type="radio" id="dedicated" name="playerType" class="sideMargin topBotMargin">
+                        <label for="dedicated">Dedicated <span class="referenceTag">(> 20hrs/week)</span></label><br>
+                        <input type="radio" id="casual" name="playerType" class="sideMargin topBotMargin">
+                        <label for="casual">Competitive <span class="referenceTag">(PvP enthusiast)</span></label>
+                    </div>
+                    <div class="featureRatingContainer">
+                        <h2>Feature Ratings</h2>
+                        <ul class="featureRatingList">
+                            <li>
+                                <label for="campaignSlider">Campaign: </label>
+                                <input id="campaignSlider" type="range" min="1" max="10" value="1" class="ratingSlider">
+                            </li>
+                            <li>
+                                <label for="classBalanceSlider">Class Balance: </label>
+                                <input id="classBalanceSlider" type="range" min="1" max="10" value="1" class="ratingSlider">
+                            </li>
+                            <li>
+                                <label for="worldBuildingSlider">World-Building: </label>
+                                <input id="worldBuildingSlider" type="range" min="1" max="10" value="1" class="ratingSlider">
+                            </li>
+                            <li>
+                                <label for="artStyleSlider">Art Style: </label>
+                                <input id="artStyleSlider" type="range" min="1" max="10" value="1" class="ratingSlider">
+                            </li>
+                            <li>
+                                <label for="bossEncounterSlider">Boss Encounters: </label>
+                                <input id="bossEncounterSlider" type="range" min="1" max="10" value="1" class="ratingSlider">
+                            </li>
+                            <li>
+                                <label for="itemizationSlider">Itemization: </label>
+                                <input id="itemizationSlider" type="range" min="1" max="10" value="1" class="ratingSlider">
+                            </li>
+                            <li>
+                                <label for="multiplayerSlider">Multiplayer: </label>
+                                <input id="MultiplayerSlider" type="range" min="1" max="10" value="1" class="ratingSlider">
+                            </li>
+                        </ul>
+                    </div>
+                </form>
             </section>
             <section id="fullReviewSection">
             <div id="fullReviewBreakdown" class="review">

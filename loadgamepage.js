@@ -57,3 +57,9 @@ applyRatingColor(ratingArray);
 let patchArray = document.getElementsByClassName("patchRating");
 applyRatingColor(patchArray);
 applyPatchSymbol(patchArray);
+
+
+//handle "Leave a Review" buttons
+let leaveGameReview = document.getElementById("leaveGameReviewButton");
+let yourReviewBlock = document.getElementById("yourGameReview");
+leaveGameReview.addEventListener("click", function () {yourReviewBlock.hidden=false})

@@ -30,9 +30,14 @@ header {
 }
 
 .sideMargin {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-wrap: nowrap;
+}
+
+.topBotMargin {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .center {
@@ -217,7 +222,7 @@ main section {
 
 .reviewButton {
     padding: 1rem;
-    min-width: 250px;
+    min-width: 270px;
     height: auto;
     background-color: rgb(57, 86, 141);
     color: whitesmoke;
@@ -342,6 +347,25 @@ main section {
     color:rgb(120, 120, 120);
     font-style: italic;
     font-size: 0.8rem;
+}
+
+.anchorMarker {
+    position: relative;
+    top: -5rem;
+}
+
+#selectPlayerType {
+   padding: 0.5rem;
+   margin: 0.2rem;
+   margin-top: 1rem;
+   color: rgb(180, 180, 180);
+   width: 250px;
+   background-color: rgb(40,40,40);
+   border-radius: 0.5rem;
+}
+
+.requiredTag {
+    color: white;
 }
 
 .reviewTypeList {
