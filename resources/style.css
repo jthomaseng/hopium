@@ -233,7 +233,7 @@ main section {
 
 .altButton {
     padding: 0.2rem;
-    min-width: 250px;
+    min-width: 270px;
     height: auto;
     background-color: rgb(100, 100, 100);
     border-radius: 1rem;
@@ -278,19 +278,52 @@ main section {
 }
 
 .proConBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    font-family: monospace;
     width: 280px;
     min-height: 250px;
-    padding: 1rem;
+    padding: 0.5rem;
     text-wrap: wrap;
     border-radius: 0.5rem;
 }
 
+.proConBlock h2 {
+    text-decoration: underline;
+    margin-bottom: 0.2rem;
+}
 .proConBlock ul {
     list-style-position: inside;
+    list-style-type: none;
 }
 
 .proConBlock ul li {
+    border-radius: 0.2rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding: 0.1rem;
+    width: 250px;
+}
+
+.proList li {
     color: rgb(180, 180, 180);
+    background-color: rgba(0, 0, 0, 0.4);;
+    border: solid 1px rgba(0, 255, 0, 0.4);
+}
+
+.conList li {
+    color: rgb(180, 180, 180);
+    background-color: rgba(0, 0, 0, 0.4);;
+    border: solid 1px rgba(255, 0, 0, 0.4);
+}
+
+.resolvedList li {
+    color: rgb(180, 180, 180);
+    background-color: rgba(0, 0, 0, 0.4);;
+    border: solid 1px rgba(128, 128, 128, 0.4);
+    text-align: center;
 }
 
 .proBlock {
@@ -352,17 +385,25 @@ main section {
     margin: 0.5rem;
 }
 
+.featureRatingContainer {
+    margin: 0.2rem;
+    padding: 1rem;
+    background-color: rgb(42, 42, 66);
+    width: 250px;
+    border-radius: 0.5rem;
+}
+
 .featureRatingList {
     margin: 0.2rem;
     padding: 1rem;
     background-color: rgb(42, 42, 66);
-    min-width: 200px;
-    width: fit-content;
+    width: 220px;
     border-radius: 0.5rem;
+    list-style-type: none;
 }
 
 .featureRatingList ul {
-    list-style-type: none;
+    
 }
 
 .featureRatingList li {
@@ -372,7 +413,7 @@ main section {
 
 .ratingSlider {
  /*Add slider customizations here or switch to powerrangers version*/
- width: 12rem;
+ width: 150px;
 }
 
 .reviewElement {
