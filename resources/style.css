@@ -20,15 +20,6 @@ h2, h2 span {
     font-size: 1.5rem;
 }
 
-header {
-    display: inline-flex;
-    justify-content: center;
-    align-self: center;
-    width: 100%;
-    background-color: black;
-    padding: 0.2rem;
-}
-
 .sideMargin {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -45,44 +36,6 @@ header {
     align-items: center;
     align-content: center;
     justify-content: center;
-}
-
-#header-content {
-    display: inline-flex;
-    width: 100%;
-    max-width: 1000px;
-    justify-content: space-between;
-}
-
-#site-logo {
-    max-height: 40px;
-    height: 100%;
-    border-radius: 10px;
-    float: left;
-}
-
-
-#searchbar {
-    height: 2rem;
-    width: 100%;
-}
-
-#searchbar,input[type=text] {
-    width: 280px;
-    height: 2rem;
-    border: none;
-    border-radius: 2px;
-    padding: 2px;
-    background-color: whitesmoke;
-}
-
-#searchbar,input[type=submit] {
-    margin-left: 0;
-    color: black;
-    background-color: whitesmoke;
-    border: none;
-    position: relative;
-    right: 1rem;
 }
 
 .material-symbols-outlined {
@@ -479,4 +432,35 @@ main section {
     color: gray;
     font-style: italic;
     font-size: 0.9rem;
+}
+
+.gameGallery {
+    display: inline-block;
+    flex-direction: row;
+    background-color: rgb(50, 50, 50);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.simpleGameContainer {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    background-color: rgb(30, 30, 30);
+    width: 220px;
+    border-radius: 0.5rem;
+}
+
+.simpleGameContainer img {
+    max-width: 200px;
+    height: auto;
+}
+
+.simpleGameContainer h3 {
+    font-size: 1.2rem;
+}
+
+.simpleGameContainer h3 span {
+    font-size: 1.2rem;
 }
