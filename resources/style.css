@@ -8,8 +8,12 @@
 html {
     background-color: rgb(30,30,30);
     color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 
+a {
+    text-decoration: none;
+    color: whitesmoke
 }
 
 h1 {
@@ -20,10 +24,22 @@ h2, h2 span {
     font-size: 1.5rem;
 }
 
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    text-wrap: wrap;
+    font-weight: 300;
+}
+
 .sideMargin {
     margin-left: 1rem;
     margin-right: 1rem;
-    text-wrap: nowrap;
 }
 
 .topBotMargin {
@@ -31,11 +47,23 @@ h2, h2 span {
     margin-bottom: 0.5rem;
 }
 
+.allMargin {
+    margin: 0.5rem;
+}
+
+.top {
+
+}
+
 .center {
     display: inline-flex;
     align-items: center;
     align-content: center;
     justify-content: center;
+}
+
+.col {
+    flex-direction: column;
 }
 
 .material-symbols-outlined {
@@ -60,8 +88,8 @@ main section {
     padding: 1rem;
 }
 
-#releaseDetails {
-    margin-top: 1rem;
+section h2 {
+    margin-bottom: 0.5rem;
 }
 
 #releaseDetails p {
@@ -74,69 +102,88 @@ main section {
 
 #gameSummary {
     display: inline-flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#coverAndLinkWidget {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 280px;
-    height: 440px;
-    text-wrap: wrap;
+#gameDetails {
+    width: 400px;
+}
+
+.contentContainer {
     background-color: rgb(30, 30, 30);
     padding: 1rem;
     margin: 0.2rem;
     border-radius: 0.5rem;
 }
 
+.ratingContainer {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 165, 0, 0.7);
+    border: solid 3px orange;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.ratingContainer p {
+    color: whitesmoke !important;
+    font-size: 3rem !important;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.playerTypeReviewSummary p {
+    font-size: 0.9rem;
+    color: rgb(180, 180, 180);
+}
+
+#gameInformation {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: fit-content;
+    text-wrap: wrap;
+}
+
 #gameCover {
-    width: 200px;
     height: auto;
-}
-
-#linkWidget {
-    background-color: rgb(80,80,80);
-    border-radius: 0.5rem;
     width: 200px;
-    height: 3rem;
-    justify-content: center;
+}
+
+.linkWidget {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0, 0.5);
+    width: 100%;
+    height: fit-content;
+    padding: 0.2rem;
+    justify-content: space-around;
     align-content: center;
+    position: relative;
+    bottom: 3rem;
 }
 
-#linkWidget li {
-    display: inline-flex;
-    width: 2rem;
-    height: 2rem;
-    margin: 0px 0.2rem 0px 0.2rem;
-}
-
-#linkWidget li a img{
-    height: 2rem;
-    width: 2rem;
+.linkWidget a img{
+    height: 2.1rem;
+    width: 2.1rem;
     border-radius: 0.5rem;
+    padding: 0.1rem;
 }
 
-#compositeReviewSummary {
-    display: inline-flex;
-    flex-direction: column;
-    max-width: 300px;
-    height: 440px;
-    background-color: rgb(30, 30, 30);
-    padding: 0.5rem;
-    margin: 0.2rem;
-    border-radius: 0.5rem;
-}
 
 .reviewSummary {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
     display: inline-flex;
     flex-direction: column;
+    width: 280px;
 }
 
 .reviewSummary p {
@@ -174,14 +221,15 @@ main section {
 }
 
 .reviewButton {
-    padding: 1rem;
-    min-width: 270px;
-    height: auto;
+    padding: 0.5rem;
+    width: 12rem;
+    height: 3rem;
     background-color: rgb(57, 86, 141);
     color: whitesmoke;
     border-radius: 1rem;
     border:none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
     margin-top: 0.5rem;
 }
 
@@ -190,9 +238,9 @@ main section {
 }
 
 .altButton {
-    padding: 0.2rem;
-    min-width: 270px;
-    height: auto;
+    padding: 0.4rem;
+    width: 12rem;
+    height: 3rem;
     background-color: rgb(100, 100, 100);
     border-radius: 1rem;
     border: none;
@@ -206,6 +254,25 @@ main section {
     font-style: bold;
 }
 
+.addToWatchlistButton {
+    padding: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(236, 233, 184);
+    color: black;
+    border-radius: 1rem;
+    border:none;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.addToWatchlistButton:hover {
+    background-color: rgb(112, 111, 88);
+}
+
+.addToWatchlistButton p {
+    font-weight: bold;
+}
 
 .patchSentiment {
     font-size: 0.9rem;
@@ -240,7 +307,7 @@ main section {
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    font-family: monospace;
+    font-family: "Roboto Mono", monospace;
     width: 280px;
     min-height: 250px;
     padding: 0.5rem;
@@ -385,7 +452,7 @@ main section {
 
 .featureRatingList li {
     padding: 0.2rem;
-    font-family: monospace;
+    font-family: "Roboto Mono", monospace;
 }
 
 .ratingSlider {
@@ -435,32 +502,40 @@ main section {
 }
 
 .gameGallery {
-    display: inline-block;
+    display: inline-flex;
     flex-direction: row;
     background-color: rgb(50, 50, 50);
     border-radius: 0.5rem;
     width: 100%;
+    overflow: hidden;
 }
 
 .simpleGameContainer {
     display: inline-flex;
     flex-direction: column;
-    padding: 0.2rem;
+    padding: 0.5rem;
     margin: 0.2rem;
     background-color: rgb(30, 30, 30);
-    width: 220px;
+    width: 160px;
     border-radius: 0.5rem;
 }
 
 .simpleGameContainer img {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
 }
 
 .simpleGameContainer h3 {
-    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
 }
 
-.simpleGameContainer h3 span {
-    font-size: 1.2rem;
+.simpleGameContainer h4 {
+    margin-top: 0;
+    color: gray;
+    font-weight: 300;
+}
+
+.simpleGameContainer h4 span {
+    font-size: 1rem;
 }
