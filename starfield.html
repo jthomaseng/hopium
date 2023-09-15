@@ -60,106 +60,176 @@
                         <div id="gameDetails" class="sideMargin col">
                             <h1 id="game-title">Starfield</h1>
                             <div id="releaseDetails">
-                                <p id="released">Released: September 5, 2023</p>
-                                <p id="developer">Developer: Bethesda Game Studios</p>
-                                <p id="publisher">Publisher: Bethesda Softworks</p>
+                                <p id="released">RELEASED: September 5, 2023</p>
+                                <p id="developer">DEVELOPER: Bethesda Game Studios</p>
+                                <p id="publisher">PUBLISHER: Bethesda Softworks</p>
                             </div>
                             <p class="topBotMargin">In this next generation role-playing game set amongst the stars,
                                  create any character you want and explore with unparalleled freedom
                                   as you embark on an epic journey to answer humanity’s greatest
                                    mystery.</p>
-                            <button class="addToWatchlistButton center">
-                                <span class="material-symbols-outlined">bookmark_add</span>
-                                <p>Add to Watchlist</p>
-                            </button>
-                            <a href="#yourGameReview-Marker"><button id="leaveGameReviewButton" class="reviewButton">Review Game</button></a>
-                            <a href="#detailedCompositeReview"><button class="altButton">View Review Details</button></a>
-                        
-                        </div>
-                        <div id="gameRatingSummary" class="center col">
-                            <h2>GBR Rating</h2>
-                            <div id="gbrRatingContainer" class="ratingContainer center">
-                                <p>7.3</p>
+                            <div id="gameRatingSummary" class="center">
+                                <div id="gbrRatingContainer" class="ratingContainer center">
+                                    <p>7.3</p>
+                                </div>
+                                <div class="playerTypeReviewSummary">
+                                    <p>Casual <span class="numberOfReviews">(3,549)</span>:   <span class="rating">8</span>/10</p>
+                                    <p>Dedicated <span class="numberOfReviews">(531)</span>:  <span class="rating">7</span>/10</p>
+                                    <p>Competitive <span class="numberOfReviews">(178)</span>:  <span class="rating">3</span>/10</p>
+                                </div>
+                            </div><br>
+                            <div id="detailsButtonList" class="center">
+                                <button class="addToWatchlistButton center">
+                                    <span class="material-symbols-outlined">bookmark_add</span>
+                                    <p>Add to Watchlist</p></button>
+                                <a href="#yourGameReview-Marker">
+                                    <button id="leaveGameReviewButton" class="reviewButton center">
+                                        <span class="material-symbols-outlined">add</span>
+                                        Add My Review</button></a>
                             </div>
-                            <div class="playerTypeReviewSummary">
+                        </div>
+                    </div>
+                    <div id="compositeProAndCon" class="review sideMargin center contentContainer">
+                        <div id="currentPros" class="proConBlock proBlock">
+                            <h2>Strengths</h2>
+                            <ul class="proList">
+                                <li>Class Balance <span class="referenceTag">(57%)</span></li>
+                                <li>World-building <span class="referenceTag">(52%)</span></li>
+                                <li>Campaign <span class="referenceTag">(51%)</span></li>
+                                <li>Art style <span class="referenceTag">(48%)</span></li>
+                                <li>Easy to Learn <span class="referenceTag">(42%)</span></li>
+                            </ul>
+                        </div>
+                        <div id="currentCons" class="proConBlock conBlock">
+                            <h2>Weaknesses</h2>
+                            <ul class="conList">
+                                <li>Repetitive Dungeons <span class="referenceTag">(62%)</span></li>
+                                <li>Simple Boss Fights <span class="referenceTag">(34%)</span></li>
+                                <li>Poor Attack Signaling <span class="referenceTag">(30%)</span></li>
+                            </ul>
+                        </div>
+                        <div id="resolvedCons" class="proConBlock resolvedBlock">
+                            <h2>Improvements</h2>
+                            <ul class="resolvedList">
+                                <li>Multiplayer Bugs<br><span class="referenceTag">(Patch 1.1.0)</span></li>
+                                <li>Cannot pet the dog<br><span class="referenceTag">(Patch 1.0.4)</span></li>
+                                <li>Not enough bag space<br><span class="referenceTag">(Patch 1.0.3)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="generalRatingSummary" class="reviewSummary contentContainer center">
+                        <h2>Patch Rating</h2>
+                        <div id="gameRatingSummary" class="center">
+                            <div id="gbrRatingContainer" class="ratingContainer center">
+                                <p class="patchRating material-symbols-outlined">7.3</p>
+                            </div>
+                            <div class="patchRatingSummary">
+                                <p><b>Patch 10.2.12</b></p>
+                                <p>is viewed as an improvement</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Released September 24, 2023</p>
+                        <a href="#yourGameReview-Marker"><button id="leaveGameReviewButton" class="reviewButton center">
+                            <span class="material-symbols-outlined">add</span>
+                            Add Patch Review</button></a>
+                        <a href="#detailedCompositeReview"><button class="altButton">View Patch History</button></a>
+                    </div>
+                    <div id="generalRatingSummary" class="reviewSummary contentContainer center">
+                        <h2>Season Rating</h2>
+                        <div class="center">
+                            <div id="gbrRatingContainer" class="ratingContainer center">
+                                <p>4.1</p>
+                            </div>
+                            <div id="playerTypeReviewSummary">
                                 <p>Casual <span class="numberOfReviews">(3,549)</span>:   <span class="rating">8</span>/10</p>
                                 <p>Dedicated <span class="numberOfReviews">(531)</span>:  <span class="rating">7</span>/10</p>
                                 <p>Competitive <span class="numberOfReviews">(178)</span>:  <span class="rating">3</span>/10</p>
                             </div>
                         </div>
-                    </div>
-                    <div id="gameRatingSummary" class="reviewSummary contentContainer center">
-                        <h2>Patch Rating</h2>
-                        <div id="gbrRatingContainer" class="ratingContainer center">
-                            <p  class="patchRating material-symbols-outlined">7.2</p>
-                        </div>
-                        <div id="playerTypeReviewSummary">
-                            <p>Casual <span class="numberOfReviews">(3,549)</span>:   <span class="rating">8</span>/10</p>
-                            <p>Dedicated <span class="numberOfReviews">(531)</span>:  <span class="rating">7</span>/10</p>
-                            <p>Competitive <span class="numberOfReviews">(178)</span>:  <span class="rating">3</span>/10</p>
-                        </div>
-                        <a href="#yourGameReview-Marker"><button id="leaveGameReviewButton" class="reviewButton">Review Patch</button></a>
-                        <a href="#detailedCompositeReview"><button class="altButton">View Patch History</button></a>
-                    </div>
-                    <div id="gameRatingSummary" class="reviewSummary contentContainer center">
-                        <h2>Season Rating</h2>
-                        <div id="gbrRatingContainer" class="ratingContainer center">
-                            <p>4.1</p>
-                        </div>
-                        <div id="playerTypeReviewSummary">
-                            <p>Casual <span class="numberOfReviews">(3,549)</span>:   <span class="rating">8</span>/10</p>
-                            <p>Dedicated <span class="numberOfReviews">(531)</span>:  <span class="rating">7</span>/10</p>
-                            <p>Competitive <span class="numberOfReviews">(178)</span>:  <span class="rating">3</span>/10</p>
-                        </div>
-                        <a href="#yourGameReview-Marker"><button id="leaveGameReviewButton" class="reviewButton">Review Season</button></a>
+                        <br>
+                        <p>Season 4<br>Released September 28, 2023</p>
+                        <a href="#yourGameReview-Marker"><button id="leaveGameReviewButton" class="reviewButton center">
+                            <span class="material-symbols-outlined">add</span>
+                                        Add Season Review</button></a>
                         <a href="#detailedCompositeReview"><button class="altButton">View Season History</button></a>
                     </div>
-                    <div id="gameRatingSummary" class="reviewSummary contentContainer center">
+                    <div id="generalRatingSummary" class="reviewSummary contentContainer center">
                         <h2>DLC Rating</h2>
-                        <div id="gbrRatingContainer" class="ratingContainer center">
-                            <p>5.6</p>
+                        <div class="center">
+                            <div id="gbrRatingContainer" class="ratingContainer center">
+                                <p>2.0</p>
+                            </div>
+                            <div id="playerTypeReviewSummary">
+                                <p>Casual <span class="numberOfReviews">(3,549)</span>:   <span class="rating">8</span>/10</p>
+                                <p>Dedicated <span class="numberOfReviews">(531)</span>:  <span class="rating">7</span>/10</p>
+                                <p>Competitive <span class="numberOfReviews">(178)</span>:  <span class="rating">3</span>/10</p>
+                            </div>
                         </div>
-                        <div id="playerTypeReviewSummary">
-                            <p>Casual <span class="numberOfReviews">(3,549)</span>:   <span class="rating">8</span>/10</p>
-                            <p>Dedicated <span class="numberOfReviews">(531)</span>:  <span class="rating">7</span>/10</p>
-                            <p>Competitive <span class="numberOfReviews">(178)</span>:  <span class="rating">3</span>/10</p>
-                        </div>
-                        <a href="#yourGameReview-Marker"><button id="leaveGameReviewButton" class="reviewButton">Review DLC</button></a>
+                        <br>
+                        <p>Generic DLC Title<br>Released August 25, 2023</p>
+                        <a href="#yourGameReview-Marker"><button id="leaveGameReviewButton" class="reviewButton center">
+                            <span class="material-symbols-outlined">add</span>
+                                        Add DLC Review</button></a>
                         <a href="#detailedCompositeReview"><button class="altButton">View DLC History</button></a>
                     </div>
 
                 </div>
-                <div id="compositeProAndCon" class="review sideMargin center">
-                    <div id="currentPros" class="proConBlock proBlock">
-                        <h2>The Good</h2>
-                        <ul class="proList">
-                            <li>Class Balance <span class="referenceTag">(57%)</span></li>
-                            <li>World-building <span class="referenceTag">(52%)</span></li>
-                            <li>Campaign <span class="referenceTag">(51%)</span></li>
-                            <li>Art style <span class="referenceTag">(48%)</span></li>
-                            <li>Easy to Learn <span class="referenceTag">(42%)</span></li>
+            </section>
+            <!--FULL COMPOSITE REVIEW DETAILS-->
+            <section id="fullReviewSection">
+            <div id="fullReviewBreakdown" class="review">
+
+                <div id="detailedCompositeReview">
+                    <h2>Detailed Composite Review Breakdown</h2>
+                    <div id= "playerTypeSelectCompositeReview" class="playerTypeSelection">
+                        <ul class="playerTypeList">
+                            <li id="compositeButton">Composite</li>
+                            <li id="casualButton">Casual</li>
+                            <li id="dedicatedButton">Dedicated</li>
+                            <li id="competitiveButton">Competitve</li>
                         </ul>
                     </div>
-                    <div id="currentCons" class="proConBlock conBlock">
-                        <h2>The Bad</h2>
-                        <ul class="conList">
-                            <li>Repetitive Dungeons <span class="referenceTag">(62%)</span></li>
-                            <li>Simple Boss Fights <span class="referenceTag">(34%)</span></li>
-                            <li>Poor Attack Signaling <span class="referenceTag">(30%)</span></li>
+                    <div class="featureRatingContainer">
+                        <h2>Feature Ratings</h2>
+                        <ul class="featureRatingList">
+                            <li>
+                                <label for="campaignSlider">Campaign: </label>
+                                <input id="campaignSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="classBalanceSlider">Class Balance: </label>
+                                <input id="classBalanceSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="worldBuildingSlider">World-Building: </label>
+                                <input id="worldBuildingSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="artStyleSlider">Art Style: </label>
+                                <input id="artStyleSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="bossEncounterSlider">Boss Encounters: </label>
+                                <input id="bossEncounterSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="itemizationSlider">Itemization: </label>
+                                <input id="itemizationSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
+                            <li>
+                                <label for="multiplayerSlider">Multiplayer: </label>
+                                <input id="MultiplayerSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
+                            </li>
                         </ul>
                     </div>
-                    <div id="resolvedCons" class="proConBlock resolvedBlock">
-                        <h2>The Resolved</h2>
-                        <ul class="resolvedList">
-                            <li>Multiplayer Bugs<br><span class="referenceTag">(Patch 1.1.0)</span></li>
-                            <li>Cannot pet the dog<br><span class="referenceTag">(Patch 1.0.4)</span></li>
-                            <li>Not enough bag space<br><span class="referenceTag">(Patch 1.0.3)</span></li>
-                        </ul>
-                    </div>
+                    
                 </div>
+            </div>
             </section>
             <!--USER'S PERSONAL GAME REVIEW SECTION-->
-            <section id="yourGameReview"> <!--Add hidden="true"-->
+            <section id="yourGameReview" hidden="true"> <!--Add hidden="true"-->
                 <div id="yourGameReview-Marker" class="anchorMarker"></div>
                 <h2>Your Game Review</h2>
                 <form id="gameReviewForm">
@@ -207,55 +277,7 @@
                     </div>
                 </form>
             </section>
-            <section id="fullReviewSection">
-            <div id="fullReviewBreakdown" class="review">
-
-                <div id="detailedCompositeReview">
-                    <h2>Detailed Composite Review Breakdown</h2>
-                    <div id= "playerTypeSelectCompositeReview" class="playerTypeSelection">
-                        <ul class="playerTypeList">
-                            <li id="compositeButton">Composite</li>
-                            <li id="casualButton">Casual</li>
-                            <li id="dedicatedButton">Dedicated</li>
-                            <li id="competitiveButton">Competitve</li>
-                        </ul>
-                    </div>
-                    <div class="featureRatingContainer">
-                        <h2>Feature Ratings</h2>
-                        <ul class="featureRatingList">
-                            <li>
-                                <label for="campaignSlider">Campaign: </label>
-                                <input id="campaignSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
-                            </li>
-                            <li>
-                                <label for="classBalanceSlider">Class Balance: </label>
-                                <input id="classBalanceSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
-                            </li>
-                            <li>
-                                <label for="worldBuildingSlider">World-Building: </label>
-                                <input id="worldBuildingSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
-                            </li>
-                            <li>
-                                <label for="artStyleSlider">Art Style: </label>
-                                <input id="artStyleSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
-                            </li>
-                            <li>
-                                <label for="bossEncounterSlider">Boss Encounters: </label>
-                                <input id="bossEncounterSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
-                            </li>
-                            <li>
-                                <label for="itemizationSlider">Itemization: </label>
-                                <input id="itemizationSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
-                            </li>
-                            <li>
-                                <label for="multiplayerSlider">Multiplayer: </label>
-                                <input id="MultiplayerSlider" type="range" min="1" max="10" value="8" class="ratingSlider" disabled="true">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            </section>
+            <!--ALL REVIEWS LIST SECTION-->
             <section id="LatestReviewSection">
             <div id="latestReviewList" class="review">
                 <h2>Game Review List</h2>

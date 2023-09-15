@@ -93,8 +93,9 @@ section h2 {
 }
 
 #releaseDetails p {
-    font-size: 0.9rem;
-    color: rgb(180, 180, 180);
+    font-size: 0.8rem;
+    font-family: "Roboto Mono", monospace;
+    color: rgb(120, 120, 120);
     margin-left: 0.2rem;
     text-indent: -4.6rem;
     padding-left: 4.6rem;
@@ -109,9 +110,6 @@ section h2 {
     align-items: center;
 }
 
-#gameDetails {
-    width: 400px;
-}
 
 .contentContainer {
     background-color: rgb(30, 30, 30);
@@ -121,18 +119,18 @@ section h2 {
 }
 
 .ratingContainer {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 1.5rem;
-    background-color: rgba(255, 165, 0, 0.7);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+
     border: solid 3px orange;
-    margin-bottom: 1rem;
+    margin-right: 0.5rem;
     padding: 0;
 }
 
 .ratingContainer p {
     color: whitesmoke !important;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     font-weight: 900;
     padding: 0;
     margin: 0;
@@ -149,7 +147,7 @@ section h2 {
     align-items: start;
     justify-content: start;
     width: 100%;
-    height: fit-content;
+    height: 330px;
     text-wrap: wrap;
 }
 
@@ -187,7 +185,6 @@ section h2 {
 }
 
 .reviewSummary p {
-    padding-left: 0.5rem;
     font-size: 0.9rem;
     color: rgb(180, 180, 180);
     text-wrap: wrap;
@@ -196,18 +193,6 @@ section h2 {
 .reviewSummary p span {
     font-size: 0.9rem;
     color: rgb(180, 180, 180);
-}
-
-
-#patchReviewSummary {
-    display: inline-flex;
-    flex-direction: column;
-    max-width: 280px;
-    height: 440px;
-    background-color: rgb(30, 30, 30);
-    padding: 0.5rem;
-    margin: 0.2rem;
-    border-radius: 0.5rem;
 }
 
 .numberOfReviews {
@@ -222,15 +207,15 @@ section h2 {
 
 .reviewButton {
     padding: 0.5rem;
-    width: 12rem;
+    width: 14rem;
     height: 3rem;
-    background-color: rgb(57, 86, 141);
+    background-color: rgb(76, 105, 160);
     color: whitesmoke;
     border-radius: 1rem;
     border:none;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 0.5rem;
+    margin: 0.5rem;
 }
 
 .reviewButton:hover {
@@ -239,13 +224,14 @@ section h2 {
 
 .altButton {
     padding: 0.4rem;
-    width: 12rem;
+    width: 14rem;
     height: 3rem;
     background-color: rgb(100, 100, 100);
+    color: whitesmoke;
     border-radius: 1rem;
     border: none;
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem, 0.2rem, 0.5rem, 0.2rem;
 }
 
 .altButton:hover {
@@ -263,7 +249,7 @@ section h2 {
     border-radius: 1rem;
     border:none;
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem, 0.2rem, 0.5rem, 0.2rem;
 }
 
 .addToWatchlistButton:hover {
@@ -316,7 +302,6 @@ section h2 {
 }
 
 .proConBlock h2 {
-    text-decoration: underline;
     margin-bottom: 0.2rem;
 }
 .proConBlock ul {
@@ -325,6 +310,7 @@ section h2 {
 }
 
 .proConBlock ul li {
+    font-size: 0.8rem;
     border-radius: 0.2rem;
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
@@ -372,6 +358,10 @@ section h2 {
 .anchorMarker {
     position: relative;
     top: -5rem;
+}
+
+.patchRatingSummary {
+    width: 8rem;
 }
 
 #selectPlayerType {
